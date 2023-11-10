@@ -2,16 +2,15 @@ body {
     background: #5c577c;
     display: grid;
     place-items: center;
-    padding: 2rem;
-    margin: 0; /* Add this to remove default margin */
-    /* height: 100vh; Make sure body takes full viewport height */
+    padding: 1rem;
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Ensure body takes full viewport height */
 }
 
 .presentation-container {
     position: relative;
-    width: 80%;
-    aspect-ratio: 1/1;
-    /* padding-top: 56.25%; for 16:9 aspect ratio */
+    width: 100%; /* Subtract the padding */
+    height: 100%; /* Subtract the padding */
     margin: auto;
 }
 
@@ -20,6 +19,5 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    aspect-ratio: 1/1;
+    height: 100%;
 }
