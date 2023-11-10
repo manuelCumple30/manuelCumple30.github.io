@@ -1,0 +1,37 @@
+body {
+    background: #483d8b;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    margin: 0; /* Add this to remove default margin */
+    height: 100vh; /* Make sure body takes full viewport height */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./PXL_20221030_122054982.PORTRAIT-EDIT.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+
+.presentation-container {
+    position: relative;
+    width: 80%;
+    padding-top: 56.25%; /* for 16:9 aspect ratio */
+    margin: auto;
+}
+
+.presentation-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
