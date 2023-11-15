@@ -2,7 +2,7 @@ body {
     background: #5c577c;
     display: grid;
     place-items: center;
-    padding: 1rem;
+    padding: 0;
     margin: 0; /* Remove default margin */
     height: 100vh; /* Ensure body takes full viewport height */
 }
